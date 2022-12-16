@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Меню</h1>
+    <table id="sostav">
+        <tr>
+            <th><img src="/img/hunt.jpg" width="100px">
+                <p>ОХОТНИЧЬЯ</p>
+            </th>
+            <td class="t">Охотничьи колбаски, бекон, копченая курица, говяжий фарш, томаты, шампиньоны, соус "Томатный"
+                сыр "Моцарелла ", соус "Спайси"</td>
+        </tr>
+        <tr>
+            <th><img src="/img/rim.jpg" width="100px">
+                <p>ПИЦЦА РИМСКАЯ</p>
+            </th>
+            <td class="t">Ветчина, фарш куриный, томаты, лук репчатый, сыр моцарелла, майонез, горчица, соус цезарь,
+                зелень</td>
+        </tr>
+        <tr>
+            <th><img src="/img/mr crab.jpg" width="100px">
+                <p>МИСТЕР КРАБ</p>
+            </th>
+            <td class="t">Имитация краба, огурцы, томаты, майонез, кукуруза консервированная, сыр моцарелла, соус
+                томатный, зелень</td>
+        </tr>
+        <tr>
+            <th><img src="/img/meri.jpg" width="100px">
+                <p>ПИЦЦА MERI</p>
+            </th>
+            <td class="t">Ветчина, копченая куриная грудка, консервированный ананас, сыр моцарелла, соус томатный, соус
+                сладкий чили</td>
+        </tr>
+        <tr>
+            <th><img src="/img/del mare.jpg" width="100px">
+                <p>ПИЦЦА ДЕЛЬ МАРЕ</p>
+            </th>
+            <td class="t">Сервелат, пеперони, огурцы маринованные, маслины, сыр моцарелла, майонез</td>
+        </tr>
+    </table>
+    <br />
+    <form id="obrs">
+        <fieldset>
+            <legend>
+                <h3>Оформление заказа</h3>
+            </legend>
+            <label for="fio">Ваше ФИО</label>
+            <input type="text" name="fio" placeholder="Ф.И.О" /><br />
+            <label for="phone">Ваш номер телефона</label>
+            <input type="tel" name="phone" placeholder="Телефон" /><br />
+            <label for="email">Ваш адрес эл. почты</label>
+            <input type="email" name="email" placeholder="E-Mail" /><br />
+            <label for="adres">Выберите вариант</label>
+            <select name="theme" required="required" multiple>
+                <option>ОХОТНИЧЬЯ</option>
+                <option>ПИЦЦА РИМСКАЯ</option>
+                <option>МИСТЕР КРАБ</option>
+                <option>ПИЦЦА MERI</option>
+                <option>ПИЦЦА ДЕЛЬ МАРЕ</option>
+            </select><br />
+            <label for="adres">Ваш адрес</label>
+            <input type="text" name="adres" placeholder="Адрес доставки" />
+            <input type="submit" value="Заказать" />
+        </fieldset> <br /><br /><br /><br />
+    </form>
+    <form>
+        <h3>Обратная связь</h3>
+        <div class="guruweba_example_infofield">Тема обращения</div>
+        <select name="theme" required="required">
+            <option value="">Выберите вариант</option>
+            <option>Вопрос по работе сервиса</option>
+            <option>Помощь в оформлении заказа</option>
+            <option>Сотрудничество</option>
+            <option>Пожелания / предложения</option>
+        </select>
+        <div>Ваше Имя</div>
+        <input type="text" name="name" placeholder="Имя" required="required">
+        <div>Ваш email</div>
+        <input type="email" name="email" placeholder="E-mail" required="required">
+        <div>Сообщение</div>
+        <textarea name="message"></textarea>
+        <input type="submit" name="submit_btn" value="Отправить">
+
+    </form>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+        }
+
+        #sostav,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+
+        }
+
+        #obrs {
+            width: 30%;
+        }
+
+        #sostav,
+        th,
+        .td {
+            width: 35%;
+            text-align: justify;
+
+        }
+
+        h1 {
+            padding-left: 15%;
+        }
+    </style>
+</body>
+
+</html>
